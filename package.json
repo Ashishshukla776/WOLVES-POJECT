@@ -1,0 +1,23 @@
+{
+  "name": "wolves-poject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^12.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashishshukla776/WOLVES-POJECT.git"
+  },
+  "author": "Ashish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashishshukla776/WOLVES-POJECT/issues"
+  },
+  "homepage": "https://github.com/Ashishshukla776/WOLVES-POJECT#readme"
+}
