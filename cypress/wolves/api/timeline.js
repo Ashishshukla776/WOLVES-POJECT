@@ -1,4 +1,5 @@
 describe(`timeLinePlus API`, () => {
+    const apiUrl = Cypress.env("apiUrl")
     before(() => {
         cy.login()
     })
@@ -14,7 +15,7 @@ describe(`timeLinePlus API`, () => {
     const request = (bodyItem) => {
         return cy.request({
             method: "POST",
-            url: "https://stageapi.swanbay.tv/v1/players/stats/games/timeLinePlus",
+            url: `${apiUrl}/v1/players/stats/games/timeLinePlus`,
             headers: {
                 Authorization: Cypress.env("apiToken"),
             },
@@ -22,7 +23,7 @@ describe(`timeLinePlus API`, () => {
             failOnStatusCode : false
         })
     }
-    
+
     context(`Success test case of timeLinePlus`, () => {
         it(`postanalytics on matchListing page`, () => {
             let req = requestBody({})

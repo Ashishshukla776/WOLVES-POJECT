@@ -1,10 +1,11 @@
+const apiUrl = Cypress.env("apiUrl")
 Cypress.Commands.add('login', () => {
     cy.request({
         method:"POST",
-        url:"https://stageapi.swanbay.tv/admin/login",
+        url:`${apiUrl}/admin/login`,
         body:{
-            "email": "super@admin.com",
-            "password": "admin@123"
+            "email": Cypress.env("email"),
+            "password": Cypress.env("password")
         }
     }).then(({body})=>{
         let token = "Bearer " + body.data.token
