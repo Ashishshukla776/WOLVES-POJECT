@@ -1,9 +1,9 @@
 describe(`Navigate the match-plus page`,()=>{
     const matchSel = require('../../selectors/matchPlus.sel')
     before(()=>{
-        cy.visit('http://localhost:4200')
+        cy.visit(Cypress.env("uiUrl"))
     })
-    it(``,()=>{
+    it(`Check the events of match-plus page`,()=>{
 
         cy.get(matchSel.chooseMatch).check({force: true})
         cy.get('#2293180').click({force: true})

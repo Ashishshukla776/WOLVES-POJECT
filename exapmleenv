@@ -1,0 +1,4 @@
+EMAIL="demo@demo.com"
+PASSWORD="demo@123"
+APIURL = "https://stageapi.swanbay.tv"
+UIURL="https://wolves.plnt.tv/"

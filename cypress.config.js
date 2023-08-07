@@ -9,9 +9,10 @@ module.exports = defineConfig({
     env:{
       email:process.env.EMAIL,
       password:process.env.PASSWORD,
-      apiUrl:process.env.APIURL
+      apiUrl:process.env.APIURL,
+      uiUrl:process.env.UIURL
     },
-    baseUrl: 'http://localhost:4200',
+    baseUrl: process.env.UIURL,
     specPattern : 'cypress/wolves'
   },
  
